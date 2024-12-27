@@ -21,8 +21,8 @@ jobs:
 
       # 3. Build Docker image
       - name: Build Docker image
-        run: docker build -t tuilanguyencuong/my-nextjs-app:latest .
+        run: docker build -t my-nextjs-app:latest .
 
       # 4. Push Docker image
       - name: Push Docker image
-        run: docker push tuilanguyencuong/my-nextjs-app:lastest
+        run: docker push my-nextjs-app:lastest
