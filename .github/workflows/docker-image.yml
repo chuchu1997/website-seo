@@ -24,8 +24,8 @@ jobs:
 
       # 3. Build Docker image
       - name: Build Docker image
-        run: docker build -t my-nextjs-app:latest . # Xây dựng Docker image từ Dockerfile
+        run: docker build -t tuilanguyencuong/my-nextjs-app:latest . # Xây dựng Docker image từ Dockerfile
 
       # 4. Push Docker image lên DockerHub
       - name: Push Docker image
-        run: docker push my-nextjs-app:latest # Đẩy image lên DockerHub
+        run: docker push tuilanguyencuong/my-nextjs-app:latest # Đẩy image lên DockerHub
