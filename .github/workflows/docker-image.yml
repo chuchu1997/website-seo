@@ -13,11 +13,11 @@ jobs:
     steps:
       # 1. Checkout mã nguồn
       - name: Checkout code
-        uses: actions/checkout@v4 # Lấy mã nguồn từ repository
+        uses: actions/checkout@v2 # Lấy mã nguồn từ repository
 
       # 2. Đăng nhập vào DockerHub
       - name: Log in to DockerHub
-        uses: docker/login-action@v4
+        uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKER_USERNAME }} # Tên người dùng DockerHub từ secrets
           password: ${{ secrets.DOCKER_PASSWORD }} # Mật khẩu DockerHub từ secrets
